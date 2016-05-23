@@ -1,0 +1,6 @@
+﻿URL GOTO=https://www.android.com/intl/en_in/versions/name-n/
+TAG POS=1 TYPE=INPUT:TEXT FORM=ACTION:https://services.google.com/fb/submissions* ATTR=ID:suggestion CONTENT=Neyyappam
+URL GOTO=javascript:document.getElementsByClassName("button<SP>name-n-form__button<SP>js-n-submit<SP>js-formbox-submit")[0].removeAttribute("disabled");
+TAG POS=1 TYPE=BUTTON FORM=ACTION:https://services.google.com/fb/submissions* ATTR=TXT:Submit
+WAIT SECONDS =1
+
