@@ -1,7 +1,11 @@
 ﻿var base_url= "https://www.truecaller.com/in/";
 
-var start=[ 7065  , 7834  , 7835  , 7836  , 7840  , 8506  , 8510  , 8512  , 8742  , 8743  , 8744  , 8745  , 8750  , 9155  , 9540  , 9718  , 9891  , 9911  , 9990  , 7827  , 7859  , 7861  , 7862  , 7863  , 8010  , 8287  , 8467  , 8468  , 8470  , 8471  , 8882  , 9015  , 9555  , 7053  , 7210  , 7503  , 7531  , 7532  , 7533  , 8285  , 8802  , 9716  , 7289  , 7290  , 7291  , 7292  , 7838  , 8375  , 8376  , 8377  , 8447  , 8585  , 8586  , 8587  , 8588  , 8685  , 8860  , 9582  , 9654  , 9711  , 9811  , 9873  , 9899  , 9953  , 9999  , 7042  , 8130  , 8527  , 8800  , 8826  , 9560  , 9650  , 9717  , 9810  , 9818  , 9871  , 9910  , 9958  , 9971 ]
+//start with prefixes for state- numbers
+var start=[9768, 8898,8286, 9867, 9892, 9967, 9987, 9004, 7738,8433, 8828, 9821, 9664, 9773, 9870, 8082, 9588, 9076, 8268,
+9702, 9594, 8108, 8652, 9146, 9757, 9869, 9969, 9920, 9769, 9833, 9820, 9819, 9619, 9167, 9930, 8879, 9172, 8291]
+// it can any of them
 var mid=[5,6];
+// this part we know
 var end=19735;
 
 for (var i = 0; i < start.length; i++) {
@@ -17,6 +21,7 @@ for (var i = 0; i < start.length; i++) {
         script+="TAG POS=1 TYPE=P ATTR=TXT:To<SP>prove<SP>that<SP>you<SP>are<SP>not<SP>a<SP>robot,<SP>s* EXTRACT=TXT"+"\n";
         var error =iimPlay(script);
         if(error==1){
+            // fill your location in here
             script="CODE:\n"+"SAVEAS TYPE=PNG FOLDER=/home/theawless/iMacros/Screenshots FILE="+number.toString()+"\n";
             iimPlay(script); 
         }
