@@ -31,3 +31,7 @@ Damn! Android N is "Nougat"!
 * Set up imacro extension for firefox   
 * Run  
 
+### Pingu
+
+College proxies often block pinging.  
+Automatically ping/trace websites over http (using some websites like www.spfld.com and www.congentco.com)
